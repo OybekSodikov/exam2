@@ -1,0 +1,64 @@
+main {
+  max-width: 1500px;
+  padding: 50px 146px 200px;
+  margin: 0px auto;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  button{
+    max-width: 200px;
+    width: 100%;
+    padding: 12px 0px;
+    @extend .button;
+    margin-right: 5%;
+    &:hover{
+        background-color: rgba(0, 118, 245, 1) ;
+        transform: rotateX(0.2);
+        transition: 1s;
+        color: white;
+        cursor: pointer;
+    }
+  }
+  .div_main1 {
+    width: 100%;
+    max-width: 590px;
+    h1 {
+      font-family: Fira Code;
+      font-size: 62px;
+      font-weight: 600;
+      line-height: 68px;
+      letter-spacing: -0.08em;
+      text-align: left;
+      margin-top: 78px;
+      margin-bottom: 40px;
+    }
+      span{
+        color: rgba(0, 118, 245, 1);
+      }
+      
+    }
+  }
+
+  .div_phone{
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    gap: 20px;
+    // background-image: url(https://www.figma.com/file/7daXB7kdDsYtjuFhM8bqKf/image/c1009e13edec9224fe6978b5f3a12c6066592d2c);
+    // background-position: 2.2;
+    // opacity: 0.9;
+    .img2{
+        transform: translateY(20%);
+        
+    }
+    img{
+        width: 100%;
+        max-width: 170px;
+        box-shadow: 5px 10px 20px  rgb(109, 105, 105);
+        border-radius: 20px;
+    }
+  }
+  
+

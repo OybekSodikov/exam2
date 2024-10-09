@@ -1,0 +1,76 @@
+.menu_navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: rgb(54, 62, 110);
+  width: 100vw;
+  height: 100vh;
+  gap: 50px;
+  position: fixed;
+  transition: 1s;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  z-index: 11;
+}
+.nav_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  i {
+    font-size: 49px;
+    color: #fff;
+  }
+}
+nav {
+  .in {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+  label {
+    display: none;
+  }
+}
+nav {
+  max-width: 1500px;
+  padding: 16px 160px;
+  margin: 0px auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .leftactions {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      gap: 20px;
+      li {
+        list-style: none;
+        a {
+          color: rgba(27, 26, 24, 1);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  button {
+    margin-left: 200px;
+    padding: 12px 36px;
+    @extend .button;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0, 118, 245, 1);
+      transform: rotateX(0.2);
+      transition: 1s;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
